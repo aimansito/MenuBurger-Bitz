@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tríptico - Burgers & Bitz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="print-instructions">
+        <h2>Instrucciones de Impresión</h2>
+        <p>Para imprimir correctamente: <strong>Ctrl+P</strong> → Orientación <strong>Horizontal</strong> → Tamaño
+            <strong>A4</strong> → Márgenes <strong>Ninguno</strong> → Activar <strong>Gráficos de fondo</strong>
+        </p>
+        <button onclick="window.print()">Imprimir Tríptico</button>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- CARA A - INTERIOR (Fondo Negro) -->
+    <!-- ============================================ -->
+    <div class="triptico cara-a">
+        <!-- Panel Izquierdo -->
+        <div class="panel panel-izquierdo">
+            <div class="seccion">
+                <h2>ENSALADAS</h2>
+                <img src="img/ensalada.png" alt="Ensaladas" class="img-seccion">
+                <div class="menu-item">
+                    <span class="nombre">Ensalada César</span>
+                    <span class="precio">6,50€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Queso de Cabra <small>(Tibia)</small></span>
+                    <span class="precio">8,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Mixta / Rusa</span>
+                    <span class="precio">5,50€ / 4,50€</span>
+                </div>
+            </div>
+
+            <div class="seccion">
+                <h2>ENTRANTES CALIENTES</h2>
+                <img src="img/entrantes.png" alt="Entrantes" class="img-seccion">
+                <div class="menu-item">
+                    <span class="nombre">Sopa Harira</span>
+                    <span class="precio">4,50€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Alitas Crujientes <small>(Salsa Chef)</small></span>
+                    <span class="precio">5,50€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Briwat Pollo <small>(Tipo Samosa)</small></span>
+                    <span class="precio">5,50€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Pastela de Pollo <small>(Almendras)</small></span>
+                    <span class="precio">6,50€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Croquetas Caseras</span>
+                    <span class="precio">5,50€</span>
+                </div>
+            </div>
+
+            <div class="seccion">
+                <h2>TOQUE MEXICANO</h2>
+                <img src="img/nachos.png" alt="Nachos" class="img-seccion">
+                <div class="menu-item">
+                    <span class="nombre">Nachos Vaca Madurada</span>
+                    <span class="precio">8,50€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Tacos (3 uds): Pollo / Vaca</span>
+                    <span class="precio">5,90€ / 7,50€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Burritos: Pollo / Vaca</span>
+                    <span class="precio">7,00€ / 8,00€</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel Central - BURGERS -->
+        <div class="panel panel-central">
+            <div class="marco-burgers">
+                <h2 class="titulo-burgers">BURGERS GOURMET</h2>
+                <p class="subtitulo">(Todas incluyen patatas fritas naturales)</p>
+
+                <div class="burger-item">
+                    <div class="burger-header">
+                        <span class="burger-nombre">SMASH BURGER</span>
+                        <span class="burger-precio">6,00€</span>
+                    </div>
+                    <p class="burger-desc">100g carne smash, queso, cebolla caramelizada.</p>
+                </div>
+
+                <div class="burger-item destacada">
+                    <div class="burger-header">
+                        <span class="burger-nombre">SMASH DOBLE</span>
+                        <span class="burger-precio">11,00€</span>
+                    </div>
+                    <p class="burger-desc">Doble carne, doble queso, cebolla caramelizada.</p>
+                </div>
+
+                <div class="burger-item estrella">
+                    <div class="burger-header">
+                        <span class="burger-nombre">LA REINA</span>
+                        <span class="burger-precio">11,00€</span>
+                    </div>
+                    <span class="etiqueta">★ La más completa</span>
+                    <p class="burger-desc">Tomate, lechuga, cebolla car., cheddar, gouda, huevo y bacon.</p>
+                </div>
+
+                <div class="burger-item">
+                    <div class="burger-header">
+                        <span class="burger-nombre">LA DUQUESA</span>
+                        <span class="burger-precio">10,00€</span>
+                    </div>
+                    <p class="burger-desc">Queso de cabra, bacon, lechuga, tomate, cebolla.</p>
+                </div>
+
+                <div class="burger-item">
+                    <div class="burger-header">
+                        <span class="burger-nombre">LA CLÁSICA</span>
+                        <span class="burger-precio">8,00€</span>
+                    </div>
+                    <p class="burger-desc">Cheddar, lechuga, tomate, cebolla caramelizada.</p>
+                </div>
+
+                <div class="burger-item">
+                    <div class="burger-header">
+                        <span class="burger-nombre">DEL CHEF</span>
+                        <span class="burger-precio">8,50€</span>
+                    </div>
+                    <p class="burger-desc">Guacamole, cheddar, cebolla frita, patatas paja.</p>
+                </div>
+
+                <div class="burger-alternativas">
+                    <div class="alt-item">
+                        <span>POLLO</span>
+                        <span>6,50€</span>
+                    </div>
+                    <div class="alt-item">
+                        <span>PESCADO CRUJIENTE</span>
+                        <span>8,50€</span>
+                    </div>
+                </div>
+
+                <img src="img/burger.png" alt="Burger Gourmet" class="img-burger-central">
+            </div>
+        </div>
+
+        <!-- Panel Derecho -->
+        <div class="panel panel-derecho">
+            <div class="seccion">
+                <h2>PIZZAS</h2>
+                <img src="img/pizza.png" alt="Pizza" class="img-seccion">
+                <div class="menu-item">
+                    <span class="nombre">Margarita</span>
+                    <span class="precio">6,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">4 Quesos</span>
+                    <span class="precio">7,50€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Pollo y Champiñones</span>
+                    <span class="precio">7,50€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Marisco</span>
+                    <span class="precio">9,50€</span>
+                </div>
+            </div>
+
+            <div class="seccion">
+                <h2>TACOS FRANCESES</h2>
+                <p class="nota-seccion">(Con patatas fritas)</p>
+                <img src="img/tacos.png" alt="Tacos Franceses" class="img-seccion">
+                <div class="menu-item">
+                    <span class="nombre">Pollo</span>
+                    <span class="precio">7,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Ternera</span>
+                    <span class="precio">8,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Gambas</span>
+                    <span class="precio">9,50€</span>
+                </div>
+            </div>
+
+            <div class="seccion">
+                <h2>BOCADILLOS</h2>
+                <p class="nota-seccion">(Con patatas fritas)</p>
+                <img src="img/bocadillo.png" alt="Bocadillos" class="img-seccion">
+                <div class="menu-item">
+                    <span class="nombre">Pollo / Ternera</span>
+                    <span class="precio">7,00€ / 8,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Salchicha Moruna</span>
+                    <span class="precio">8,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Gambas</span>
+                    <span class="precio">9,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Mixto</span>
+                    <span class="precio">8,50€</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- CARA B - EXTERIOR (Fondo Madera/Mixto) -->
+    <!-- ============================================ -->
+    <div class="triptico cara-b">
+        <!-- Pala de Cierre (Izquierda) - Rincón Marroquí -->
+        <div class="panel panel-pala">
+            <div class="contenido-marroqui">
+                <h2>RINCÓN MARROQUÍ</h2>
+                <img src="img/tajine.png" alt="Tajine" class="img-seccion img-marroqui">
+
+                <div class="seccion-tajines">
+                    <h3>TAJINES</h3>
+                    <div class="menu-item">
+                        <span class="nombre">De Pollo <small>(Limón/Aceitunas)</small></span>
+                        <span class="precio">12,50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="nombre">De Ternera <small>(Ciruelas/Almendras)</small></span>
+                        <span class="precio">14,50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="nombre">De Cordero</span>
+                        <span class="precio">16,50€</span>
+                    </div>
+                </div>
+
+                <div class="seccion-cuscus">
+                    <h3>CUSCÚS <span class="dia">(Solo Viernes)</span></h3>
+                    <img src="img/cuscus.png" alt="Cuscús" class="img-seccion img-marroqui">
+                    <div class="menu-item">
+                        <span class="nombre">Pollo</span>
+                        <span class="precio">12,00€</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="nombre">Ternera</span>
+                        <span class="precio">14,00€</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="nombre">Cordero</span>
+                        <span class="precio">16,00€</span>
+                    </div>
+                </div>
+
+                <div class="seccion-postres">
+                    <h3>POSTRES</h3>
+                    <img src="img/postres.png" alt="Postres" class="img-seccion">
+                    <div class="menu-item">
+                        <span class="nombre">Tarta de Queso / Tiramisú / Flan</span>
+                        <span class="precio">4,50€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dorso (Centro) - Bebidas e Info -->
+        <div class="panel panel-dorso">
+            <div class="contenido-bebidas">
+                <h2>BEBIDAS</h2>
+                <img src="img/refrescos.png" alt="Refrescos" class="img-seccion img-bebidas">
+                <div class="bebidas-basicas">
+                    <span>Refrescos <strong>2,00€</strong></span>
+                    <span>Red Bull <strong>2,50€</strong></span>
+                </div>
+
+                <div class="seccion-zumos">
+                    <h3>ZUMOS NATURALES & BATIDOS</h3>
+                    <img src="img/zumos.png" alt="Zumos" class="img-seccion">
+                    <div class="menu-item">
+                        <span class="nombre">Naranja / Piña / Mango</span>
+                        <span class="precio">5,50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="nombre">Panaché</span>
+                        <span class="precio">7,00€</span>
+                    </div>
+                </div>
+
+                <div class="seccion-cafe">
+                    <h3>CAFÉ E INFUSIONES</h3>
+                    <img src="img/cafe.png" alt="Café" class="img-seccion">
+                    <div class="menu-item">
+                        <span class="nombre">Té Moruno</span>
+                        <span class="precio">1,80€</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="nombre">Café con leche</span>
+                        <span class="precio">2,00€</span>
+                    </div>
+                </div>
+
+                <div class="info-contacto">
+                    <!-- Badges arriba -->
+                    <div class="badges">
+                        <img src="img/Vegetarian icon.jpg" alt="Vegetariano" class="badge-img">
+                        <img src="img/HALAL-Logo-500x281.webp" alt="Halal" class="badge-img">
+                    </div>
+
+                    <p class="direccion">Av. Oriental 2, San Pedro Alcántara</p>
+
+                    <!-- Mapa de Google Maps más grande -->
+                    <div class="mapa-container mapa-grande">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.2!2d-4.99!3d36.49!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDI5JzI0LjAiTiA0wrA1OSczNi4wIlc!5e0!3m2!1ses!2ses!4v1234567890!5m2!1ses!2ses&q=Avenida+Oriental+2,+San+Pedro+Alcántara"
+                            class="mapa-iframe" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div class="redes">
+                        <span class="instagram">@burgers_bitz</span>
+                        <span class="facebook">/BurgersBitz</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portada (Derecha) -->
+        <div class="panel panel-portada">
+            <div class="contenido-portada">
+                <div class="logo-container">
+                    <img src="img/Logo_Final.png" alt="Burgers & Bitz Logo" class="logo-img">
+                </div>
+
+                <div class="servicios">
+                    <span class="servicio">Take Away</span>
+                    <span class="separador">&</span>
+                    <span class="servicio">A Domicilio</span>
+                </div>
+
+                <div class="telefonos">
+                    <div class="telefono">
+                        <span class="icono">Tel:</span>
+                        <span class="numero">951 259 200</span>
+                    </div>
+                    <div class="telefono">
+                        <span class="icono">Móvil:</span>
+                        <span class="numero">687 167 056</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-screen">
+        <p>Tríptico diseñado para <strong>Burgers & Bitz</strong> - San Pedro Alcántara</p>
+    </div>
+</body>
+
+</html>

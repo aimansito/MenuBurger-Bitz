@@ -1,0 +1,692 @@
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ============================================
+   INSTRUCCIONES DE IMPRESIÓN (Solo pantalla)
+   ============================================ */
+.print-instructions {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.print-instructions h2 {
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.print-instructions button {
+    background: white;
+    color: #667eea;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.print-instructions button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer-screen {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ============================================
+   ESTRUCTURA DEL TRÍPTICO
+   ============================================ */
+.triptico {
+    display: flex;
+    width: 297mm;
+    height: 210mm;
+    margin: 0 auto 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.panel {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================
+   CARA A - INTERIOR (Fondo Negro)
+   ============================================ */
+.cara-a {
+    background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+}
+
+.cara-a .panel {
+    color: #fff;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cara-a .panel:last-child {
+    border-right: none;
+}
+
+/* Secciones del menú */
+.seccion {
+    margin-bottom: 18px;
+}
+
+.seccion h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f4a020;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f4a020;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nota-seccion {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: -8px;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+/* Items del menú */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 4px 0;
+    font-size: 11px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.15);
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item .nombre {
+    flex: 1;
+    color: #e0e0e0;
+}
+
+.menu-item .nombre small {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 9px;
+}
+
+.menu-item .precio {
+    color: #f4a020;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+/* ============================================
+   PANEL CENTRAL - BURGERS (Con marco)
+   ============================================ */
+.panel-central {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+    padding: 10px !important;
+}
+
+.marco-burgers {
+    border: 3px solid #f4a020;
+    border-radius: 15px;
+    padding: 15px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(244, 160, 32, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+    box-shadow:
+        0 0 20px rgba(244, 160, 32, 0.2),
+        inset 0 0 30px rgba(244, 160, 32, 0.05);
+}
+
+.titulo-burgers {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #f4a020;
+    text-align: center;
+    margin-bottom: 3px;
+    text-shadow: 0 2px 10px rgba(244, 160, 32, 0.5);
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+/* Burger items */
+.burger-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.burger-item:hover {
+    background: rgba(244, 160, 32, 0.15);
+}
+
+.burger-item.estrella {
+    background: linear-gradient(135deg, rgba(244, 160, 32, 0.2) 0%, rgba(255, 215, 0, 0.1) 100%);
+    border: 1px solid rgba(244, 160, 32, 0.4);
+}
+
+.burger-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-nombre {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.burger-precio {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #f4a020;
+}
+
+.etiqueta {
+    display: inline-block;
+    background: #f4a020;
+    color: #000;
+    font-size: 8px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.burger-desc {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 3px;
+    line-height: 1.3;
+}
+
+/* Alternativas (Pollo/Pescado) */
+.burger-alternativas {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed rgba(244, 160, 32, 0.3);
+}
+
+.alt-item {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.alt-item span:last-child {
+    color: #f4a020;
+    font-weight: 600;
+}
+
+/* ============================================
+   CARA B - EXTERIOR (Fondo Madera/Mixto)
+   ============================================ */
+.cara-b {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="wood" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%238B7355"/><stop offset="50%" style="stop-color:%23A0826D"/><stop offset="100%" style="stop-color:%23725B45"/></linearGradient></defs><rect fill="url(%23wood)" width="100" height="100"/></svg>');
+    background-size: cover;
+}
+
+/* Pala de cierre - Rincón Marroquí */
+.panel-pala {
+    background: linear-gradient(180deg, #1a2a4a 0%, #0f1a30 100%);
+    color: #fff;
+}
+
+.contenido-marroqui h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #d4af37;
+}
+
+.seccion-tajines,
+.seccion-cuscus,
+.seccion-postres {
+    margin-bottom: 15px;
+}
+
+.contenido-marroqui h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    color: #d4af37;
+    margin-bottom: 8px;
+}
+
+.contenido-marroqui h3 .dia {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: normal;
+}
+
+.panel-pala .menu-item {
+    font-size: 10px;
+}
+
+.panel-pala .menu-item .precio {
+    color: #d4af37;
+}
+
+/* Dorso - Bebidas */
+.panel-dorso {
+    background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+    color: #fff;
+}
+
+.contenido-bebidas h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: #f4a020;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.bebidas-basicas {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 11px;
+}
+
+.bebidas-basicas strong {
+    color: #f4a020;
+}
+
+.seccion-zumos,
+.seccion-cafe {
+    margin-bottom: 15px;
+}
+
+.contenido-bebidas h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    color: #f4a020;
+    margin-bottom: 8px;
+}
+
+.panel-dorso .menu-item {
+    font-size: 10px;
+}
+
+.panel-dorso .menu-item .precio {
+    color: #f4a020;
+}
+
+/* Info contacto */
+.info-contacto {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.direccion {
+    font-size: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.mapa-container {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mapa-grande {
+    height: 250px;
+    flex: 1;
+}
+
+.mapa-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 9px;
+}
+
+.badge-img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
+.badge.vegetariano {
+    background: rgba(76, 175, 80, 0.3);
+    color: #81c784;
+}
+
+.badge.halal {
+    background: rgba(244, 160, 32, 0.3);
+    color: #f4a020;
+}
+
+/* Portada */
+.panel-portada {
+    background:
+        linear-gradient(180deg, rgba(139, 115, 85, 0.95) 0%, rgba(90, 70, 50, 0.98) 100%),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%238B7355" width="100" height="100"/></svg>');
+    color: #fff;
+    text-align: center;
+}
+
+.contenido-portada {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo-icon {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+.logo h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 span {
+    font-size: 24px;
+    color: #f4a020;
+}
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.servicio {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.separador {
+    color: #f4a020;
+    font-weight: bold;
+}
+
+.telefonos {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.telefono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.telefono .numero {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Imagen burger animada */
+.imagen-burger {
+    margin-top: 15px;
+    position: relative;
+    height: 60px;
+}
+
+.burger-visual {
+    width: 80px;
+    height: 50px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #8B4513 0%, #A0522D 20%, #FFD700 40%, #8B4513 60%, #228B22 80%, #8B4513 100%);
+    border-radius: 30px 30px 10px 10px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cheese-drip {
+    position: absolute;
+    width: 12px;
+    height: 25px;
+    background: linear-gradient(180deg, #FFD700, #FFA500);
+    border-radius: 0 0 6px 6px;
+    top: 18px;
+    animation: drip 2s ease-in-out infinite;
+}
+
+.cheese-drip:nth-child(1) {
+    left: 15px;
+    animation-delay: 0s;
+}
+
+.cheese-drip:nth-child(2) {
+    left: 35px;
+    animation-delay: 0.5s;
+}
+
+.cheese-drip:nth-child(3) {
+    left: 55px;
+    animation-delay: 1s;
+}
+
+@keyframes drip {
+
+    0%,
+    100% {
+        height: 20px;
+    }
+
+    50% {
+        height: 30px;
+    }
+}
+
+/* ============================================
+   ESTILOS PARA IMÁGENES
+   ============================================ */
+.img-seccion {
+    width: 100%;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.img-marroqui {
+    height: 55px;
+}
+
+.img-bebidas {
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.img-burger-central {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 8px;
+    box-shadow: 0 5px 15px rgba(244, 160, 32, 0.3);
+}
+
+.img-portada {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    display: block;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.imagen-burger {
+    margin-top: auto;
+    padding: 10px;
+}
+
+/* ============================================
+   ESTILOS DE IMPRESIÓN
+   ============================================ */
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+
+    body {
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .print-instructions,
+    .footer-screen {
+        display: none !important;
+    }
+
+    .triptico {
+        box-shadow: none;
+        border-radius: 0;
+        page-break-after: always;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .triptico:last-child {
+        page-break-after: auto;
+    }
+
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
+}
+
+/* ============================================
+   RESPONSIVE (para visualizar en pantalla)
+   ============================================ */
+@media screen and (max-width: 1200px) {
+    .triptico {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .panel {
+        min-height: 400px;
+    }
+}
