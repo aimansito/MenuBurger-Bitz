@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tríptico - Burgers & Bitz (Uber)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="print-instructions">
+        <h2>Instrucciones de Impresión</h2>
+        <p>Para imprimir correctamente: <strong>Ctrl+P</strong> → Orientación <strong>Horizontal</strong> → Tamaño
+            <strong>A4</strong> → Márgenes <strong>Ninguno</strong> → Activar <strong>Gráficos de fondo</strong>
+        </p>
+        <button onclick="window.print()">Imprimir Tríptico</button>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- CARA A - INTERIOR (Fondo Negro) -->
+    <!-- ============================================ -->
+    <div class="triptico cara-a">
+        <!-- Panel Izquierdo: Ensaladas, Entrantes, Mexicano y Pizzas -->
+        <div class="panel panel-izquierdo">
+            <div class="seccion">
+                <svg class="ornamento-seccion" width="100%" height="3" viewBox="0 0 100 3" preserveAspectRatio="none">
+                    <line x1="0" y1="1.5" x2="100" y2="1.5" stroke="#d17e21" stroke-width="0.5" />
+                </svg>
+                <h2>ENSALADAS / SALADS</h2>
+                <div class="menu-item">
+                    <span class="nombre">Ensalada César / Caesar Salad <br><small>(Cherry, picatoste, parmesano,
+                            pollo)</small></span>
+                    <span class="precio">11,60€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Queso de Cabra <small>(Manzana, frutos secos)</small></span>
+                    <span class="precio">14,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Mixta / Rusa <br><small class="traduccion">Mixed / Russian Salad</small></span>
+                    <span class="precio">10,00€ / 8,40€</span>
+                </div>
+            </div>
+
+            <div class="seccion">
+                <h2>ENTRANTES / STARTERS</h2>
+                <div class="menu-item">
+                    <span class="nombre">Sopa Harira / Harira Soup</span>
+                    <span class="precio">8,40€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Alitas Crujientes <small>(Salsa Chef)</small></span>
+                    <span class="precio">10,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Briwat Pollo <small>(3 uds)</small></span>
+                    <span class="precio">10,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Pastela de Pollo <small>(Almendras)</small></span>
+                    <span class="precio">11,60€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Croquetas Caseras / Croquettes</span>
+                    <span class="precio">10,00€</span>
+                </div>
+            </div>
+
+            <div class="seccion seccion-mexicana">
+                <h2>MEXICANO / MEXICAN</h2>
+                <div class="menu-item">
+                    <span class="nombre">Nachos Vaca Madurada / Aged Beef</span>
+                    <span class="precio">14,80€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Nachos Vegetarianos / Veggie</span>
+                    <span class="precio">11,60€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Tacos (3 uds): Pollo / Vaca Madurada / Mixto</span>
+                    <span class="precio">10,65€ / 13,20€ / 14,80€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Burritos: Pollo / Vaca Madurada / Mixto</span>
+                    <span class="precio">12,40€ / 14,00€ / 14,80€</span>
+                </div>
+            </div>
+
+            <div class="seccion">
+                <h2>PIZZAS</h2>
+                <div class="menu-item">
+                    <span class="nombre">Margarita / Margherita</span>
+                    <span class="precio">10,80€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Vegetariana / Vegetarian</span>
+                    <span class="precio">13,20€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">4 Quesos / 4 Cheeses</span>
+                    <span class="precio">13,20€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Pollo y Champiñones / Chicken & Mushrooms</span>
+                    <span class="precio">13,20€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Boloñesa / Bolognese</span>
+                    <span class="precio">14,80€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Marisco / Seafood</span>
+                    <span class="precio">16,40€</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel Central: Burgers -->
+        <div class="panel panel-central">
+            <div class="marco-burgers">
+                <h2 class="titulo-burgers">BURGERS GOURMET</h2>
+                <p class="subtitulo">Carne de Vaca Madurada 150g / Smash 100g<br>(Incluyen patatas y salsa del chef /
+                    Fries & chef sauce included)</p>
+
+                <div class="burger-item">
+                    <div class="burger-header">
+                        <span class="burger-nombre">SMASH BURGER</span>
+                        <span class="burger-precio">10,80€</span>
+                    </div>
+                    <p class="burger-desc">Carne smash, queso, cebolla car.</p>
+                </div>
+
+                <div class="burger-item destacada">
+                    <div class="burger-header">
+                        <span class="burger-nombre">SMASH DOBLE</span>
+                        <span class="burger-precio">18,80€</span>
+                    </div>
+                    <p class="burger-desc">Doble carne, doble queso, cebolla car.</p>
+                </div>
+
+                <div class="burger-item estrella">
+                    <div class="burger-header">
+                        <span class="burger-nombre">LA REINA</span>
+                        <span class="burger-precio">18,80€</span>
+                    </div>
+                    <span class="etiqueta">★ La más completa</span>
+                    <p class="burger-desc">Tomate, lechuga, cebolla car., cheddar, gouda, huevo, bacon.</p>
+                </div>
+
+                <div class="burger-item">
+                    <div class="burger-header">
+                        <span class="burger-nombre">LA PRINCESA</span>
+                        <span class="burger-precio">14,80€</span>
+                    </div>
+                    <p class="burger-desc">Lechuga, tomate, cebolla car., huevo.</p>
+                </div>
+
+                <div class="burger-item">
+                    <div class="burger-header">
+                        <span class="burger-nombre">LA DUQUESA</span>
+                        <span class="burger-precio">17,20€</span>
+                    </div>
+                    <p class="burger-desc">Queso cabra, bacon, lechuga, tomate, cebolla.</p>
+                </div>
+
+                <div class="burger-item">
+                    <div class="burger-header">
+                        <span class="burger-nombre">LA CLÁSICA</span>
+                        <span class="burger-precio">14,00€</span>
+                    </div>
+                    <p class="burger-desc">Cheddar, lechuga, tomate, cebolla car.</p>
+                </div>
+
+                <div class="burger-item">
+                    <div class="burger-header">
+                        <span class="burger-nombre">DEL CHEF</span>
+                        <span class="burger-precio">14,80€</span>
+                    </div>
+                    <p class="burger-desc">Guacamole, cheddar, cebolla frita, patata paja.</p>
+                </div>
+
+                <div class="burger-alternativas">
+                    <div class="alt-item"><span>Pollo: 11,60€</span></div>
+                    <div class="alt-item"><span>Pescado: 14,80€</span></div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Panel Derecho: Tacos, Bocadillos y Marroquí -->
+        <div class="panel panel-derecho">
+            <div class="seccion">
+                <h2>TACOS FRANCESES / FRENCH TACOS</h2>
+                <p class="nota-seccion">(Con patatas fritas / Served with fries)</p>
+                <div class="menu-item">
+                    <span class="nombre">Pollo / Chicken</span>
+                    <span class="precio">12,40€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Ternera / Beef</span>
+                    <span class="precio">14,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Mixto / Mixed</span>
+                    <span class="precio">14,80€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Gambas / Prawns</span>
+                    <span class="precio">16,40€</span>
+                </div>
+            </div>
+
+            <div class="seccion">
+                <h2>BOCADILLOS / SANDWICHES</h2>
+                <p class="nota-seccion">(Con patatas fritas / Served with fries)</p>
+                <div class="menu-item">
+                    <span class="nombre">Pollo / Ternera</span>
+                    <span class="precio">12,40€ / 14,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Mixto / Mixed</span>
+                    <span class="precio">14,80€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Salchicha Moruna / Moorish Sausage</span>
+                    <span class="precio">14,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Gambas / Prawns</span>
+                    <span class="precio">15,60€</span>
+                </div>
+            </div>
+
+            <div class="seccion contenido-marroqui">
+                <h2>COMIDA MARROQUÍ / MOROCCAN FOOD</h2>
+                <div class="marroqui-columnas">
+                    <div class="seccion-tajines">
+                        <h3 style="color:#d17e21; font-family:'Oswald';font-size:11px;margin:5px 0;">TAJINES</h3>
+                        <div class="menu-item">
+                            <span class="nombre">De Pollo <small>(Limón/Aceitunas)</small></span>
+                            <span class="precio">21,20€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="nombre">De Ternera <small>(Ciruelas/Alm.)</small></span>
+                            <span class="precio">24,40€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="nombre">De Cordero / Lamb</span>
+                            <span class="precio">27,60€</span>
+                        </div>
+                    </div>
+
+                    <div class="seccion-cuscus">
+                        <h3 style="color:#d17e21; font-family:'Oswald';font-size:11px;margin:5px 0 2px;">CUSCÚS /
+                            COUSCOUS</h3>
+                        <div class="menu-item">
+                            <span class="nombre">Pollo / Chicken</span>
+                            <span class="precio">20,40€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="nombre">Ternera / Beef</span>
+                            <span class="precio">23,60€</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="nombre">Cordero / Lamb</span>
+                            <span class="precio">26,80€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- CARA B - EXTERIOR (Fondo Madera/Mixto) -->
+    <!-- ============================================ -->
+    <div class="triptico cara-b">
+        <!-- Pala de Cierre (Izquierda) - Postres, Café y Extras -->
+        <div class="panel panel-pala">
+            <div class="seccion seccion-postres">
+                <h2>POSTRES / DESSERTS</h2>
+                <div class="menu-item">
+                    <span class="nombre">Tarta de Queso / Cheesecake</span>
+                    <span class="precio">8,40€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Tiramisú</span>
+                    <span class="precio">8,40€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Flan / Creme Caramel</span>
+                    <span class="precio">7,60€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Dulces Marroquíes (Ud)</span>
+                    <span class="precio">2,80€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Helado (Bola) / Ice Cream</span>
+                    <span class="precio">5,20€</span>
+                </div>
+            </div>
+
+            <div class="seccion seccion-cafe">
+                <h2>CAFÉ E INFUSIONES / COFFEE</h2>
+                <div class="menu-item">
+                    <span class="nombre">Café Solo / Espresso</span>
+                    <span class="precio">4,10€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Café con leche / Latte</span>
+                    <span class="precio">4,40€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Té Moruno / Moorish Mint Tea</span>
+                    <span class="precio">4,10€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Té Verde / Green Tea</span>
+                    <span class="precio">4,10€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Té Rojo / Red Tea</span>
+                    <span class="precio">4,10€</span>
+                </div>
+            </div>
+
+            <div class="seccion seccion-extras">
+                <h2>SALSAS / EXTRAS</h2>
+                <div class="menu-item"><span class="nombre">Salsas / Sauces</span><span class="precio">1,70€</span>
+                </div>
+                <div class="menu-item"><span class="nombre">Queso / Huevo / Cheese / Egg</span><span
+                        class="precio">2,80€</span></div>
+                <div class="menu-item"><span class="nombre">Bacon</span><span class="precio">2,80€</span></div>
+            </div>
+        </div>
+
+        <!-- Dorso (Centro) - Bebidas e Info -->
+        <div class="panel panel-dorso">
+            <div class="seccion contenido-bebidas">
+                <h2>BEBIDAS / DRINKS</h2>
+                <div class="menu-item">
+                    <span class="nombre">Refrescos / Soft Drinks</span>
+                    <span class="precio">4,40€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Red Bull</span>
+                    <span class="precio">5,20€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Poms & Hawai</span>
+                    <span class="precio">5,20€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Agua / Water</span>
+                    <span class="precio">4,40€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Zumos / Juices</span>
+                    <span class="precio">5,20€</span>
+                </div>
+            </div>
+
+            <div class="seccion seccion-zumos">
+                <h2>ZUMOS NATURALES / FRESH JUICES</h2>
+                <div class="menu-item">
+                    <span class="nombre">Naranja / Orange</span>
+                    <span class="precio">8,40€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Piña / Fresa</span>
+                    <span class="precio">9,20€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Mango</span>
+                    <span class="precio">10,00€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Banana, Mango & Leche</span>
+                    <span class="precio">10,80€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Aguacate, Banana & Leche</span>
+                    <span class="precio">10,80€</span>
+                </div>
+                <div class="menu-item">
+                    <span class="nombre">Mix de Frutas de la Casa</span>
+                    <span class="precio">12,40€</span>
+                </div>
+            </div>
+
+            <div class="marketing-box">
+                <div class="marketing-header">
+                    ¡HAZ TU PEDIDO A RECOGER!
+                </div>
+                <div class="marketing-phone">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d17e21" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span>951 632 378</span>
+                </div>
+
+                <div class="marketing-divider"></div>
+
+                <div class="marketing-location">
+                    <span class="marketing-label">
+                        <svg width="12" height="12" viewBox="0 0 12 16"
+                            style="vertical-align: middle; margin-right: 4px;">
+                            <path
+                                d="M6 0C2.7 0 0 2.7 0 6c0 4.5 6 10 6 10s6-5.5 6-10c0-3.3-2.7-6-6-6zm0 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+                                fill="#c9a961" />
+                        </svg>
+                        ENCUÉNTRANOS AQUÍ
+                    </span>
+                    <p>Av. Oriental 2, San Pedro Alcántara</p>
+                </div>
+
+                <div class="marketing-social">
+                    <span class="social-handle">@burgersbitz</span>
+                    <div class="marketing-icons">
+                        <!-- Instagram -->
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#d17e21">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.949 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                        <!-- TikTok -->
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#d17e21">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                        <!-- Facebook -->
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#d17e21">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portada (Derecha) -->
+        <div class="panel panel-portada">
+            <!-- Imagen de fondo -->
+            <div class="portada-bg"></div>
+            <div class="portada-overlay"></div>
+
+            <div class="contenido-portada">
+                <!-- Ornamento Superior -->
+                <svg class="ornamento-top" width="120" height="25" viewBox="0 0 120 25"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="12.5" x2="40" y2="12.5" stroke="#d17e21" stroke-width="0.8" />
+                    <g transform="translate(60, 12.5)">
+                        <rect x="-6" y="-6" width="12" height="12" fill="none" stroke="#d17e21" stroke-width="0.8"
+                            transform="rotate(45)" />
+                        <circle cx="0" cy="0" r="2" fill="#d17e21" />
+                    </g>
+                    <line x1="80" y1="12.5" x2="115" y2="12.5" stroke="#d17e21" stroke-width="0.8" />
+                </svg>
+
+                <!-- Logo Burgers & Bitz -->
+                <div class="logo-container-portada">
+                    <h1
+                        style="color: #d17e21; font-family: 'Oswald', sans-serif; font-size: 48px; margin: 0; text-align: center; font-weight: 700;">
+                        BURGERS & BITZ</h1>
+                </div>
+
+                <!-- Dirección -->
+                <div class="direccion-portada">
+                    <div class="direccion-icon">
+                        <svg width="14" height="18" viewBox="0 0 12 16">
+                            <path
+                                d="M6 0C2.7 0 0 2.7 0 6c0 4.5 6 10 6 10s6-5.5 6-10c0-3.3-2.7-6-6-6zm0 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+                                fill="#d17e21" />
+                        </svg>
+                    </div>
+                    <p class="direccion-texto">Av. Oriental 2. Frente a la plaza de la iglesia</p>
+                    <p class="direccion-ciudad">29670 San Pedro Alcántara</p>
+                    <p style="margin-top:15px; color:#c9a961; font-size:12px; font-weight:bold;">¡Haz tu pedido!</p>
+                    <p style="color:#fff; font-size:16px; font-family:'Oswald'; letter-spacing:1px;">951 632 378</p>
+                </div>
+
+                <!-- Logo HALAL -->
+                <div class="halal-logo">
+                    <svg width="60" height="50" viewBox="0 0 60 50" xmlns="http://www.w3.org/2000/svg">
+                        <text x="30" y="25" font-family="'Times New Roman', serif" font-size="22" fill="#ffffff"
+                            text-anchor="middle" font-weight="bold" style="font-style: italic;">حلال</text>
+                        <text x="30" y="42" font-family="'Oswald', sans-serif" font-size="11" fill="#ffffff"
+                            text-anchor="middle" letter-spacing="2">HALAL</text>
+                    </svg>
+                </div>
+
+                <!-- Ornamento Inferior -->
+                <svg class="ornamento-bottom" width="120" height="25" viewBox="0 0 120 25"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="12.5" x2="40" y2="12.5" stroke="#d17e21" stroke-width="0.8" />
+                    <g transform="translate(60, 12.5)">
+                        <rect x="-6" y="-6" width="12" height="12" fill="none" stroke="#d17e21" stroke-width="0.8"
+                            transform="rotate(45)" />
+                        <circle cx="0" cy="0" r="2" fill="#d17e21" />
+                    </g>
+                    <line x1="80" y1="12.5" x2="115" y2="12.5" stroke="#d17e21" stroke-width="0.8" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-screen">
+        <p>Tríptico diseñado para <strong>Burgers & Bitz</strong> - San Pedro Alcántara</p>
+    </div>
+</body>
+
+</html>
